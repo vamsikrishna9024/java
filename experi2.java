@@ -1,11 +1,10 @@
-package sour;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+//import java.awt.event.MouseMotionListener;
 
 import java.util.regex.*;////password
 
@@ -322,7 +321,7 @@ public class experi2 implements MouseListener,ActionListener{
          regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$";
          pattern = Pattern.compile(regex);
          re="^(?=.*[A-Z])(?=.*[a-z])(?=.*\\.).{1,}$";
-         pa=pattern.compile(re);
+         pa=Pattern.compile(re);
 
          
         
